@@ -11,10 +11,8 @@ import { AppointmentsPage } from "./containers/appointmentsPage/AppointmentsPage
 import { ContactsPage } from "./containers/contactsPage/ContactsPage";
 
 function App() {
-  /*
-  Define state variables for 
-  contacts and appointments 
-  */
+  const [appointment, setAppointment] = useState([])
+  const [contacts, setContacts] = useState([])
 
   /*
   Implement functions to add data to

@@ -14,7 +14,6 @@ export const AppointmentsPage = () => {
     /*
     Add contact info and clear data  
     */
-   
   };
 
   return (

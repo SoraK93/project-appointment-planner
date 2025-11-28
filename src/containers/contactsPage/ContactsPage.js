@@ -25,7 +25,7 @@ export const ContactsPage = () => {
   return (
     <div>
       <section>
-        <h2>Add Contact</h2> 
+        <h2>Add Contact</h2>
       </section>
       <hr />
       <section>

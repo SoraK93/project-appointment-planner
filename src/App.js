@@ -18,6 +18,10 @@ function App() {
     setContacts([...contacts, { name, phone, email }]);
   };
 
+  const addNewAppointment = (name, contact, date, time) => {
+    
+  }
+
   const router = createBrowserRouter(
     createRoutesFromElements(
       <Route path="/" element={<Root />}>

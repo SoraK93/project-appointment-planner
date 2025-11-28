@@ -14,10 +14,10 @@ function App() {
   const [appointment, setAppointment] = useState([])
   const [contacts, setContacts] = useState([])
 
-  /*
-  Implement functions to add data to
-  contacts and appointments
-  */
+  const addNewContact = (contactInfo) => {
+    const { name, date, time } = contactInfo;
+    setContacts()
+  }
 
   const router = createBrowserRouter(
     createRoutesFromElements(

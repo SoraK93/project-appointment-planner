@@ -11,13 +11,12 @@ import { AppointmentsPage } from "./containers/appointmentsPage/AppointmentsPage
 import { ContactsPage } from "./containers/contactsPage/ContactsPage";
 
 function App() {
-  const [appointment, setAppointment] = useState([])
-  const [contacts, setContacts] = useState([])
+  const [appointment, setAppointment] = useState([]);
+  const [contacts, setContacts] = useState([]);
 
-  const addNewContact = (contactInfo) => {
-    const { name, date, time } = contactInfo;
-    setContacts()
-  }
+  const addNewContact = (name, phone, email) => {
+    setContacts([...contacts, { name, phone, email }]);
+  };
 
   const router = createBrowserRouter(
     createRoutesFromElements(

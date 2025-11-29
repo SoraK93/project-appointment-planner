@@ -30,6 +30,7 @@ export const ContactForm = ({
           id="phone"
           name="phone"
           type="tel"
+          pattern="^\+[1-9]{1,2}[0-9]{7,14}$"
           value={phone}
           onChange={(e) => handleChange(e, setPhone)}
           autoComplete="tel"

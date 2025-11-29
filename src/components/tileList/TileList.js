@@ -2,9 +2,9 @@ import React from "react";
 import { Tile } from "../tile/Tile";
 
 export const TileList = ({ list }) => {
-  const contactsToRender = list?.map((contact, index) => {
-    const { name, ...rest } = contact
-    return <Tile key={index} name={name} description={rest} />
+  const contactsToRender = list?.map((info, index) => {
+    const { name, ...rest } = info
+    return <Tile idx={index} name={name} description={rest} />
   })
 
   return (
